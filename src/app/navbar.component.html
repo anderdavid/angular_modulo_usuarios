@@ -1,11 +1,11 @@
 <nav>
     <ul class="dropdown menu" data-dropdown-menu>
-         <li><a href="view.html" class="icon-button home step fi-home size-72"></a></li>
+         <li><a [routerLink]="['/inicio']" class="icon-button home step fi-home size-72"></a></li>
          <li>
              <a href="#">Usuarios</a>
              <ul class="menu">
-                 <li><a href="#">Ver</a></li>
-                 <li><a href="#">Crear</a></li>
+                 <li><a [routerLink]="['/view']">Ver</a></li>
+                 <li><a [routerLink]="['/create']">Crear</a></li>
              </ul>
          </li>
      </ul> 

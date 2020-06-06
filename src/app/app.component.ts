@@ -10,16 +10,10 @@ import 'foundation-sites';
 export class AppComponent implements OnInit{
   title = 'angModUser';
   constructor(){
-    //$(document).foundation()
+   
   }
   ngOnInit(): void {
     console.log('ngInit()')
     $(document).foundation()
-    /* 
-    $(document).ready(() => {
-      console.log('The document ready!')
-      
-    }); */
-   
   }
 }
