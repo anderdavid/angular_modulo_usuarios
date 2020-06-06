@@ -1,0 +1,118 @@
+nav{
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: black;
+   
+}
+
+.white{
+    color: aliceblue;
+}
+
+nav .menu{
+    background-color: black;
+   
+}
+nav li .menu {
+    border: 0;
+}
+
+nav .menu a{
+    font-weight: bold;
+}
+nav li .menu li{
+    border-bottom: solid 1px #293131;
+   
+}
+nav li .menu li a{
+    font-weight: normal;
+}
+
+nav li .menu li:hover{
+    background-color: rgb(17, 59, 78);
+    
+}
+
+nav li .menu li a:hover{
+    color:#fff;
+}
+
+.grid-container{
+    min-height: 600px;
+}
+
+.form-container{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.register-form {
+    border: 1px solid #cacaca;
+    padding: 1rem;
+    border-radius: 0;
+  }
+
+
+.icon-button{
+    padding: 1px 2px 1px 2px;
+    margin:1px 1px 1px 1px;
+    color:white;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(38,31,38,0.71);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(38,31,38,0.71);
+    box-shadow: 0px 0px 3px 1px rgba(38,31,38,0.71);
+   
+}
+.red{
+    background-color:#fc0c30;
+}
+.gray{
+    background-color: #58676B;
+}
+.blue{
+    background-color: #0000ff;
+}
+
+.red:hover{
+    background-color:#8b0a1e;
+    color:#f4f4f4;
+}
+.gray:hover{
+    background-color: rgb(43, 48, 49);
+    color:#f4f4f4;
+}
+.blue:hover{
+    background-color: #0707b1;
+    color:#f4f4f4;
+}
+
+.home{
+    font-size: 22px;
+}
+
+.view-user-container{
+    margin-top: 2rem;
+}
+
+.title_key{
+    font-weight: bold;
+}
+
+.modal-button{
+   margin-left: 3px;
+}
+
+
+
+footer{
+	
+	background-color:#58676B;
+	padding: 25px 40px;
+}
+
+footer p{
+	color:#e4e4e4;
+}
+  
+
+  
