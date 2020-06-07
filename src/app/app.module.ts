@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar.component';
 import { ViewUserComponent } from './view-user/view-user.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { FooterComponent } from './footer.component';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { FooterComponent } from './footer.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

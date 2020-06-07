@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {User} from '../models/user'
+import {UserService} from '../services/user.service'
 
 @Component({
   selector: 'app-view-user',
@@ -10,14 +11,10 @@ export class ViewUserComponent implements OnInit {
 
   users:User[] =[]
   userSelected:User
-  constructor() { }
+  constructor(private userService:UserService) { }
 
   ngOnInit(): void {
-    this.users =[
-      new User('1','sdfsdf','sdfsdf','sdfsdf','sddfsdf','sdfsdf','sdfsdfsf'),
-      new User('2','sdfsdf','sdfsdf','sdfsdf','sddfsdf','sdfsdf','sdfsdfsf'),
-      new User('3','sdfsdf','sdfsdf','sdfsdf','sddfsdf','sdfsdf','sdfsdfsf')
-    ]
+   this.users =this.userService.getUsers()
   }
 
   onSelected(user:User){
