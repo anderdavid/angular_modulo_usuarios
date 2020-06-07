@@ -20,6 +20,7 @@
     "@angular/platform-browser-dynamic": "~9.1.9",
     "@angular/router": "~9.1.9",
     "@types/foundation": "^5.5.30",
+    "@types/foundation-sites": "^6.4.3",
     "@types/jquery": "^3.3.38",
     "foundation-sites": "^6.6.3",
     "install": "^0.13.0",
