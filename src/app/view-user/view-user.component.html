@@ -14,24 +14,22 @@
                <th>Acciones</th>
            </thead>
            <tbody>
-               <tr>
-                    <td>1</td>
-                    <td>Nombre</td>
-                    <td>Apellido</td>
-                    <td>Cedula</td>
-                    <td>Edad</td>
-                    <td>Email</td>
-                    <td>Password</td>
+                <tr *ngFor="let usuario of users">
+                    <td> {{usuario.id}}</td>
+                    <td> {{usuario.nombre}}</td>
+                    <td> {{usuario.apellido}}</td>
+                    <td> {{usuario.cedula}}</td>
+                    <td> {{usuario.edad}}</td>
+                    <td> {{usuario.email}}</td>
+                    <td> {{usuario.password}}</td>
                     <td> 
-                        <a href="viewId.html" class="icon-button blue step fi-eye size-36"></a>
-                        <a href="edit.html" class="icon-button gray step fi-pencil size-36"></a>
+                        <a href="#" class="icon-button blue step fi-eye size-36"></a>
+                        <a href="#" class="icon-button gray step fi-pencil size-36"></a>
                         <Button  class="icon-button red step fi-trash size-36" 
-                             data-open="modal_delete_user">
-                                
+                            data-open="modal_delete_user">
                         </Button>
-                        <!-- <button class="icon-button red step fi-trash size-36"></button> -->
                     </td>
-               </tr>
+                </tr>
             </tbody>
        </table>
       </div>
