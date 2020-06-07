@@ -9,12 +9,25 @@ import {UserService} from '../services/user.service'
 })
 export class ViewUserComponent implements OnInit {
 
-  users:User[] =[]
+  users:any =[]
   userSelected:User
-  constructor(private userService:UserService) { }
+  constructor(private rest:UserService) { }
 
   ngOnInit(): void {
-   this.users =this.userService.getUsers()
+    this.getUsers()
+  }
+
+  getUsers(){
+    console.log("viewUserComponent:getProducts")
+    this.users=[]
+    this.rest.getUsers().subscribe((data)=>{
+      console.log(data)
+      console.log(data.status)
+      if(data.status){
+        this.users =data.users
+      }
+      
+    })
   }
 
   onSelected(user:User){
