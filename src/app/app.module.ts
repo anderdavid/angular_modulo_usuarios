@@ -7,6 +7,7 @@ import { TestComponentComponent } from './test-component/test-component.componen
 import { NavbarComponent } from './navbar.component';
 import { ViewUserComponent } from './view-user/view-user.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { FooterComponent } from './footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CreateUserComponent } from './create-user/create-user.component';
     TestComponentComponent,
     NavbarComponent,
     ViewUserComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
